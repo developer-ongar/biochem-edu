@@ -31,7 +31,7 @@ $ npm install --global live-server
 
 #### Installation / Setup
 ```sh
-$ git clone https://github.com/fcor/molecular-mirror-app.git # Clone the repository.
+$ git clone https://github.com/developer-ongar/biochem-edu.git # Clone the repository.
 
 $ cd molecular-mirror-app # Navigate into the folder
 
