@@ -1,6 +1,6 @@
 <h1 align="center">Biochem</h1>
 
-Biochem.edu is based on the MoleculARWeb (EPFL) source code.
+##Biochem.edu is based on the MoleculARWeb (EPFL) source code.
 
 
 Biochem.edu is a website for chemistry and structural biology education through commodity, web-based augmented reality that you can use in your webcam-enabled computer, smartphone or tablet, just on your web browser.
