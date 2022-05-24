@@ -5,7 +5,7 @@ Biochem.edu is based on the MoleculARWeb (EPFL) source code.
 
 Biochem.edu is a website for chemistry and structural biology education through commodity, web-based augmented reality that you can use in your webcam-enabled computer, smartphone or tablet, just on your web browser.
 
-This modified version of the Molecular Project is maintained by Maktanat Ongar.
+This modified version of the [Molecular](https://github.com/fcor/molecular-mirror-app) Project is maintained by Maktanat Ongar.
 
 ## Try now!
 
