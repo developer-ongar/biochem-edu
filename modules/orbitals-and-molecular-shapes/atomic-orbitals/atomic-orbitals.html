@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="/js/support.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-91563073-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-91563073-2");
+    </script>
+    <title id="title" data-i18n="orbitals.atomicOrbitals.title"></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/modules/styles/style.css" />
+
+    <!-- 3D Libraries -->
+    <script src="/lib/aframe.min.js"></script>
+    <script src="/lib/aframe-ar.js"></script>
+
+    <!-- Translation Libraries -->
+    <script src="/lib/i18n/i18next.min.js"></script>
+    <script src="/lib/i18n/i18next-wc.js"></script>
+    <script src="/lib/i18n/loc-i18next.min.js"></script>
+    <script src="/lib/i18n/i18nextBrowserLanguageDetector.js"></script>
+    <script src="/lib/i18n/i18nextHttpBackend.min.js"></script>
+
+    <!-- Web Components -->
+    <script src="/components/icons/atom/index.js"></script>
+    <script src="/components/icons/molecule/index.js"></script>
+    <script src="/components/back-anchor/index.js"></script>
+    <script src="/components/loader/index.js"></script>
+    <script src="/components/flip-video/index.js"></script>
+    <script src="/components/flip-graphics/index.js"></script>
+    <script src="/components/overlay/index.js"></script>
+    <script src="/components/toggle-instructions/index.js"></script>
+    <script src="/components/toggle-description/index.js"></script>
+    <script src="/components/toggle-menu/index.js"></script>
+    <script src="/components/reset-activity/index.js"></script>
+    <script src="/components/scale-graphics/index.js"></script>
+    <script src="/components/enable-gestures/index.js"></script>
+    <script src="/components/rotation-controls/index.js"></script>
+    <script src="/components/feedback-prompt/index.js"></script>
+    <script src="/components/zoom-icon/index.js"></script>
+    <script src="/components/swap-camera/index.js"></script>
+    <script src="/components/camera-icon/index.js"></script>
+
+    <!-- Utils & A-Frame Components -->
+    <script src="/modules/utils/aframe/modelOpacity.js"></script>
+    <script src="/modules/utils/aframe/change-material.js"></script>
+    <script src="/modules/utils/aframe/flip.js"></script>
+    <script src="/modules/utils/aframe/scale.js"></script>
+    <script src="/modules/utils/aframe/gesture-detector.js"></script>
+    <script src="/modules/utils/aframe/gesture-handler.js"></script>
+    <script src="/modules/utils/aframe/loader.js"></script>
+    <script src="/modules/utils/aframe/rotation.js"></script>
+    <script src="/modules/utils/handleTranslation.js"></script>
+    <script src="/modules/utils/aframe/selectCamera.js"></script>
+  </head>
+
+  <body>
+    <p style="display: none">
+      <a href="https://clustrmaps.com/site/1ar2f" title="Visit tracker"
+        ><img
+          src="//www.clustrmaps.com/map_v2.png?d=b_oWfSB8TUOlxHdLX1ftmUWKcboQmBFu1xmiYd_PbS4&cl=ffffff"
+          alt=""
+          width="1%"
+          height="1%"
+      /></a>
+    </p>
+
+    <!-- Header -->
+    <header id="header">
+      <div class="row">
+        <figure>
+          <atom-icon></atom-icon>
+        </figure>
+        <h1
+          class="activity-title"
+          data-i18n="orbitals.atomicOrbitals.title"
+        ></h1>
+      </div>
+    </header>
+
+    <!-- UI Components -->
+    <back-anchor></back-anchor>
+    <loader-component></loader-component>
+
+    <!-- Feedback Modal -->
+    <feedback-prompt></feedback-prompt>
+
+    <!-- camera controls -->
+    <div id="cam-container" class="camera-container small-menu hide column">
+      <div class="triangle-temp"></div>
+      <flip-video class="icon-margin"></flip-video>
+      <swap-camera class="hide icon-margin"></swap-camera>
+      <flip-graphics class="icon-margin"></flip-graphics>
+    </div>
+
+    <!-- Zoom controls -->
+    <div id="zoom-container" class="zoom-container small-menu hide column">
+      <div class="triangle-temp"></div>
+      <scale-graphics
+        class="small-icon-margin"
+        id="scale-up"
+        type="up"
+      ></scale-graphics>
+      <div class="line horizontal"></div>
+      <scale-graphics
+        class="small-icon-margin"
+        id="scale-down"
+        type="down"
+      ></scale-graphics>
+    </div>
+
+    <!-- Side buttons -->
+    <div class="side-menu column">
+      <camera-icon class="icon-margin"></camera-icon>
+      <reset-activity class="icon-margin"></reset-activity>
+      <zoom-icon class="icon-margin"></zoom-icon>
+      <toggle-menu class="icon-margin"></toggle-menu>
+    </div>
+
+    <!-- Rotation controls -->
+    <div class="rotation-controls multiple-select">
+      <rotation-controls id="rotation-marker-1" marker="1"></rotation-controls>
+      <rotation-controls id="rotation-marker-2" marker="2"></rotation-controls>
+    </div>
+
+    <!-- Selection Menu -->
+    <div id="selection-menu" class="selection-menu">
+      <div class="marker">
+        <img
+          class="marker-sample"
+          src="/assets/img/0.png"
+          alt="sample marker"
+          id="marker-image-1"
+        />
+        <div class="options" id="marker-options-1">
+          <div class="triangle"></div>
+          <div id="select-container-2" class="select-container">
+            <select id="select-marker-1" class="orbital-selector bottom-margin">
+              <optgroup label="Atomic Orbitals">
+                <option>2s</option>
+                <option>2px</option>
+                <option>2py</option>
+                <option>2pz</option>
+                <option>3dz&sup2;</option>
+                <option>3dxz</option>
+                <option>3dyz</option>
+                <option>3dxy</option>
+                <option>3dx&sup2;-y&sup2;</option>
+                <option>4f</option>
+                <option>4f</option>
+                <option>4f</option>
+                <option>4f</option>
+                <option>4f</option>
+                <option>4f</option>
+                <option>4f</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+              </optgroup>
+              <optgroup label="Hybridized Orbitals">
+                <option>sp</option>
+                <option>sp&sup2;</option>
+                <option>sp&sup3;</option>
+                <option>sp&sup3;d</option>
+                <option>sp&sup3;d&sup2;</option>
+                <option>2sp (1)</option>
+                <option>2sp (2)</option>
+                <option>2sp2 (1)</option>
+                <option>2sp2 (2)</option>
+                <option>2sp2 (3)</option>
+                <option>2sp3 (1)</option>
+                <option>2sp3 (2)</option>
+                <option>2sp3 (3)</option>
+                <option>2sp3 (4)</option>
+                <option>3sp3d (1)</option>
+                <option>3sp3d (2)</option>
+                <option>3sp3d (3)</option>
+                <option>3sp3d (4)</option>
+                <option>3sp3d (5)</option>
+                <option>3sp3d2 (1)</option>
+                <option>3sp3d2 (2)</option>
+                <option>3sp3d2 (3)</option>
+                <option>3sp3d2 (4)</option>
+                <option>3sp3d2 (5)</option>
+                <option>3sp3d2 (6)</option>
+              </optgroup>
+              <optgroup label="Ideal TRPEV geometries">
+                <option>Linear</option>
+                <option>Trigonal planar</option>
+                <option>Tetrahedral</option>
+                <option>Trigonal bipyramidal</option>
+                <option>Octahedral</option>
+              </optgroup>
+            </select>
+            <button class="toggle-btn align-left" id="btn-1" data-i18n="app.transparency"></button>
+          </div>
+          <enable-gestures
+            class="gesture-icon left-margin"
+            id="marker1"
+          ></enable-gestures>
+        </div>
+      </div>
+      <span class="line"></span>
+      <div class="marker">
+        <img
+          class="marker-sample left-margin"
+          src="/assets/img/2.png"
+          alt="sample marker"
+          id="marker-image-2"
+        />
+        <div class="options" id="marker-options-2">
+          <div class="triangle"></div>
+          <div id="select-container-2" class="select-container">
+            <select id="select-marker-2" class="orbital-selector bottom-margin">
+              <optgroup label="Atomic Orbitals">
+                <option>2s</option>
+                <option>2px</option>
+                <option>2py</option>
+                <option>2pz</option>
+                <option>3dz&sup2;</option>
+                <option>3dxz</option>
+                <option>3dyz</option>
+                <option>3dxy</option>
+                <option>3dx&sup2;-y&sup2;</option>
+                <option>4f</option>
+                <option>4f</option>
+                <option>4f</option>
+                <option>4f</option>
+                <option>4f</option>
+                <option>4f</option>
+                <option>4f</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+                <option>5g</option>
+              </optgroup>
+              <optgroup label="Hybridized Orbitals">
+                <option>sp</option>
+                <option>sp&sup2;</option>
+                <option>sp&sup3;</option>
+                <option>sp&sup3;d</option>
+                <option>sp&sup3;d&sup2;</option>
+                <option>2sp (1)</option>
+                <option>2sp (2)</option>
+                <option>2sp2 (1)</option>
+                <option>2sp2 (2)</option>
+                <option>2sp2 (3)</option>
+                <option>2sp3 (1)</option>
+                <option>2sp3 (2)</option>
+                <option>2sp3 (3)</option>
+                <option>2sp3 (4)</option>
+                <option>3sp3d (1)</option>
+                <option>3sp3d (2)</option>
+                <option>3sp3d (3)</option>
+                <option>3sp3d (4)</option>
+                <option>3sp3d (5)</option>
+                <option>3sp3d2 (1)</option>
+                <option>3sp3d2 (2)</option>
+                <option>3sp3d2 (3)</option>
+                <option>3sp3d2 (4)</option>
+                <option>3sp3d2 (5)</option>
+                <option>3sp3d2 (6)</option>
+              </optgroup>
+              <optgroup label="Ideal TRPEV geometries">
+                <option>Linear</option>
+                <option>Trigonal planar</option>
+                <option>Tetrahedral</option>
+                <option>Trigonal bipyramidal</option>
+                <option>Octahedral</option>
+              </optgroup>
+            </select>
+            <button class="toggle-btn align-left" id="btn-2" data-i18n="app.transparency"></button>
+          </div>
+          <enable-gestures
+            class="gesture-icon left-margin"
+            id="marker2"
+          ></enable-gestures>
+        </div>
+      </div>
+      <div class="extra-info">
+        <toggle-instructions class="extra-info-icon"></toggle-instructions>
+        <toggle-description class="extra-info-icon"></toggle-description>
+      </div>
+    </div>
+
+    <!-- Overlays -->
+    <activity-overlay id="instructions" default="open" type="instructions">
+      <span slot="title" data-i18n="orbitals.atomicOrbitals.title"></span>
+      <span
+        slot="instructions"
+        data-i18n="orbitals.atomicOrbitals.instructions"
+      ></span>
+    </activity-overlay>
+
+    <activity-overlay id="description" default="hidden" type="description">
+      <span slot="title" data-i18n="orbitals.atomicOrbitals.title"></span>
+      <span
+        slot="description"
+        data-i18n="orbitals.atomicOrbitals.description"
+      ></span>
+    </activity-overlay>
+
+    <activity-overlay id="menu" default="hidden" type="menu">
+      <span slot="title">Biochem.edu</span>
+    </activity-overlay>
+
+    <a-scene
+      embedded
+      arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3_HAMMING63;"
+      id="scene"
+      renderer="logarithmicDepthBuffer: true;"
+      loading-screen="enabled: false"
+      gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/;"
+      gesture-detector
+      loader
+      rotate-molecules
+      vr-mode-ui="enabled: false"
+      loading-screen="enabled: false"
+      switch-camera
+    >
+      <a-assets>
+        <!--struct assets-->
+        <a-asset-item id="orb1" src="./models/OA_2S.gltf"></a-asset-item>
+        <a-asset-item id="orb2" src="./models/OA_2P_-1.gltf"></a-asset-item>
+        <a-asset-item id="orb3" src="./models/OA_2P_0.gltf"></a-asset-item>
+        <a-asset-item id="orb4" src="./models/OA_2P_1.gltf"></a-asset-item>
+        <a-asset-item id="orb5" src="./models/OA_3D_0.gltf"></a-asset-item>
+        <a-asset-item id="orb6" src="./models/OA_3D_-1.gltf"></a-asset-item>
+        <a-asset-item id="orb7" src="./models/OA_3D_1.gltf"></a-asset-item>
+        <a-asset-item id="orb8" src="./models/OA_3D_-2.gltf"></a-asset-item>
+        <a-asset-item id="orb9" src="./models/OA_3D_2.gltf"></a-asset-item>
+        <a-asset-item id="orb10" src="./models/OA_4F_-3.gltf"></a-asset-item>
+        <a-asset-item id="orb11" src="./models/OA_4F_3.gltf"></a-asset-item>
+        <a-asset-item id="orb12" src="./models/OA_4F_-2.gltf"></a-asset-item>
+        <a-asset-item id="orb13" src="./models/OA_4F_2.gltf"></a-asset-item>
+        <a-asset-item id="orb14" src="./models/OA_4F_-1.gltf"></a-asset-item>
+        <a-asset-item id="orb15" src="./models/OA_4F_1.gltf"></a-asset-item>
+        <a-asset-item id="orb16" src="./models/OA_4F_0.gltf"></a-asset-item>
+        <a-asset-item id="orb17" src="./models/OA_5G_-4.gltf"></a-asset-item>
+        <a-asset-item id="orb18" src="./models/OA_5G_4.gltf"></a-asset-item>
+        <a-asset-item id="orb19" src="./models/OA_5G_-3.gltf"></a-asset-item>
+        <a-asset-item id="orb20" src="./models/OA_5G_3.gltf"></a-asset-item>
+        <a-asset-item id="orb21" src="./models/OA_5G_-2.gltf"></a-asset-item>
+        <a-asset-item id="orb22" src="./models/OA_5G_2.gltf"></a-asset-item>
+        <a-asset-item id="orb23" src="./models/OA_5G_-1.gltf"></a-asset-item>
+        <a-asset-item id="orb24" src="./models/OA_5G_1.gltf"></a-asset-item>
+        <a-asset-item id="orb25" src="./models/OA_5G_0.gltf"></a-asset-item>
+
+        <a-asset-item id="orb27" src="./models/2sp.gltf"></a-asset-item>
+        <a-asset-item id="orb28" src="./models/3sp2.gltf"></a-asset-item>
+        <a-asset-item id="orb29" src="./models/sp3.gltf"></a-asset-item>
+        <a-asset-item id="orb30" src="./models/5sp3d.gltf"></a-asset-item>
+        <a-asset-item id="orb31" src="./models/6sp3d2.gltf"></a-asset-item>
+
+        <a-asset-item id="orb32" src="./models/HO_2sp_1.gltf"></a-asset-item>
+        <a-asset-item id="orb33" src="./models/HO_2sp_2.gltf"></a-asset-item>
+        <a-asset-item id="orb34" src="./models/HO_2sp2_1.gltf"></a-asset-item>
+        <a-asset-item id="orb35" src="./models/HO_2sp2_2.gltf"></a-asset-item>
+        <a-asset-item id="orb36" src="./models/HO_2sp2_3.gltf"></a-asset-item>
+        <a-asset-item id="orb37" src="./models/HO_2sp3_1.gltf"></a-asset-item>
+        <a-asset-item id="orb38" src="./models/HO_2sp3_2.gltf"></a-asset-item>
+        <a-asset-item id="orb39" src="./models/HO_2sp3_3.gltf"></a-asset-item>
+        <a-asset-item id="orb40" src="./models/HO_2sp3_4.gltf"></a-asset-item>
+        <a-asset-item
+          id="orb41"
+          src="./models/HO_3sp3d_1x-1.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb42"
+          src="./models/HO_3sp3d_2x-1.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb43"
+          src="./models/HO_3sp3d_3x-1.gltf"
+        ></a-asset-item>
+        <a-asset-item id="orb44" src="./models/HO_3sp3d_4.gltf"></a-asset-item>
+        <a-asset-item id="orb45" src="./models/HO_3sp3d_5.gltf"></a-asset-item>
+        <a-asset-item
+          id="orb46"
+          src="./models/HO_3sp3d2_1x-1.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb47"
+          src="./models/HO_3sp3d2_2x-1.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb48"
+          src="./models/HO_3sp3d2_3x-1.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb49"
+          src="./models/HO_3sp3d2_4x-1.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb50"
+          src="./models/HO_3sp3d2_5x-1.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb51"
+          src="./models/HO_3sp3d2_6x-1.gltf"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="orb53obj"
+          src="./models/trpev_linear.obj"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb53mtl"
+          src="./models/trpev_linear.mtl"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb54obj"
+          src="./models/trpev_trigplanar.obj"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb54mtl"
+          src="./models/trpev_trigplanar.mtl"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb55obj"
+          src="./models/trpev_tetra.obj"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb55mtl"
+          src="./models/trpev_tetra.mtl"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb56obj"
+          src="./models/trpev_trigbipyr.obj"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb56mtl"
+          src="./models/trpev_trigbipyr.mtl"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb57obj"
+          src="./models/trpev_octa.obj"
+        ></a-asset-item>
+        <a-asset-item
+          id="orb57mtl"
+          src="./models/trpev_octa.mtl"
+        ></a-asset-item>
+      </a-assets>
+
+      <a-marker type="barcode" value="0">
+        <a-entity
+          rotation="0 0 0"
+          listen-to-flip
+          listen-to-scale
+          id="marker1A"
+          gesture-handler="linkedMarker: #marker1B"
+        >
+          <a-sphere
+            id="atom1A"
+            position="0.000   0.000   0.000"
+            color="grey"
+            radius="0.35"
+          ></a-sphere>
+          <a-entity
+            id="marker-1A-mol"
+            gltf-model="#orb1"
+            scale="0.2 0.2 0.2"
+            rotation="45 45 0"
+            position="0 0 0"
+            visible="true"
+            model-opacity="1"
+          ></a-entity>
+          <a-entity
+            id="marker-1A-orb"
+            gltf-model="#orb27"
+            scale="2 2 2"
+            rotation="45 45 0"
+            position="0 0 0"
+            visible="false"
+            change-material
+            model-opacity="1"
+          ></a-entity>
+        </a-entity>
+      </a-marker>
+
+      <a-marker type="barcode" value="1">
+        <a-entity
+          rotation="180 180 0"
+          listen-to-flip
+          listen-to-scale
+          id="marker1B"
+          gesture-handler="linkedMarker: #marker1A"
+        >
+          <a-sphere
+            id="atom1B"
+            position="0.000   0.000   0.000"
+            color="grey"
+            radius="0.35"
+          ></a-sphere>
+          <a-entity
+            id="marker-1B-mol"
+            gltf-model="#orb1"
+            scale="0.2 0.2 0.2"
+            rotation="45 45 0"
+            position="0 0 0"
+            visible="true"
+            model-opacity="1"
+          ></a-entity>
+          <a-entity
+            id="marker-1B-orb"
+            gltf-model="#orb27"
+            scale="2 2 2"
+            rotation="45 45 0"
+            position="0 0 0"
+            visible="false"
+            change-material
+            model-opacity="1"
+          ></a-entity>
+        </a-entity>
+      </a-marker>
+
+      <a-marker type="barcode" value="2">
+        <a-entity
+          rotation="0 0 0"
+          listen-to-flip
+          listen-to-scale
+          id="marker2A"
+          gesture-handler="linkedMarker: #marker2B"
+        >
+          <a-sphere
+            id="atom2A"
+            position="0.000   0.000   0.000"
+            color="grey"
+            radius="0.35"
+          ></a-sphere>
+          <a-entity
+            id="marker-2A-mol"
+            gltf-model="#orb1"
+            scale="0.2 0.2 0.2"
+            rotation="45 45 0"
+            position="0 0 0"
+            visible="true"
+            model-opacity="1"
+          ></a-entity>
+          <a-entity
+            id="marker-2A-orb"
+            gltf-model="#orb27"
+            scale="2 2 2"
+            rotation="45 45 0"
+            position="0 0 0"
+            visible="false"
+            change-material
+            model-opacity="1"
+          ></a-entity>
+        </a-entity>
+      </a-marker>
+
+      <a-marker type="barcode" value="3">
+        <a-entity
+          rotation="180 180 0"
+          listen-to-flip
+          listen-to-scale
+          id="marker2B"
+          gesture-handler="linkedMarker: #marker2A"
+        >
+          <a-sphere
+            id="atom2B"
+            position="0.000   0.000   0.000"
+            color="grey"
+            radius="0.35"
+          ></a-sphere>
+          <a-entity
+            id="marker-2B-mol"
+            gltf-model="#orb1"
+            scale="0.2 0.2 0.2"
+            rotation="45 45 0"
+            position="0 0 0"
+            visible="true"
+            model-opacity="1"
+          ></a-entity>
+          <a-entity
+            id="marker-2B-orb"
+            gltf-model="#orb27"
+            scale="2 2 2"
+            rotation="45 45 0"
+            position="0 0 0"
+            visible="false"
+            change-material
+            model-opacity="1"
+          ></a-entity>
+        </a-entity>
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+    <script src="index.js"></script>
+    <script src="/modules/utils/handleFlips.js"></script>
+    <script src="/modules/utils/handleOverlays.js"></script>
+    <script src="/modules/utils/handleGestures.js"></script>
+    <script src="/js/handleSession.js"></script>
+  </body>
+</html>

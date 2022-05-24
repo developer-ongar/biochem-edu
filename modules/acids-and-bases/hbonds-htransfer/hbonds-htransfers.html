@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="/js/support.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-91563073-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-91563073-2");
+    </script>
+
+    <title id="title" data-i18n="bonds.acidBase.title"></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/modules/styles/style.css" />
+
+    <!-- 3D Libraries -->
+    <script src="/lib/aframe.min.js"></script>
+    <script src="/lib/aframe-ar.js"></script>
+
+    <!-- Translation Libraries -->
+    <script src="/lib/i18n/i18next.min.js"></script>
+    <script src="/lib/i18n/i18next-wc.js"></script>
+    <script src="/lib/i18n/loc-i18next.min.js"></script>
+    <script src="/lib/i18n/i18nextBrowserLanguageDetector.js"></script>
+    <script src="/lib/i18n/i18nextHttpBackend.min.js"></script>
+
+    <!-- Web Components -->
+    <script src="/components/back-anchor/index.js"></script>
+    <script src="/components/icons/molecule/index.js"></script>
+    <script src="/components/icons/tubes/index.js"></script>
+    <script src="/components/loader/index.js"></script>
+    <script src="/components/flip-video/index.js"></script>
+    <script src="/components/flip-graphics/index.js"></script>
+    <script src="/components/overlay/index.js"></script>
+    <script src="/components/toggle-instructions/index.js"></script>
+    <script src="/components/toggle-description/index.js"></script>
+    <script src="/components/toggle-menu/index.js"></script>
+    <script src="/components/reset-activity/index.js"></script>
+    <script src="/components/scale-graphics/index.js"></script>
+    <script src="/components/enable-gestures/index.js"></script>
+    <script src="/components/rotation-controls/index.js"></script>
+    <script src="/components/feedback-prompt/index.js"></script>
+    <script src="/components/zoom-icon/index.js"></script>
+    <script src="/components/swap-camera/index.js"></script>
+    <script src="/components/camera-icon/index.js"></script>
+
+    <!-- Utils & A-Frame Components -->
+    <script src="index.js"></script>
+    <script src="/modules/utils/aframe/connector.js"></script>
+    <script src="/modules/utils/aframe/flip.js"></script>
+    <script src="/modules/utils/aframe/scale.js"></script>
+    <script src="/modules/utils/aframe/gesture-detector.js"></script>
+    <script src="/modules/utils/aframe/gesture-handler.js"></script>
+    <script src="/modules/utils/aframe/loader.js"></script>
+    <script src="/modules/utils/aframe/rotation.js"></script>
+    <script src="/modules/utils/handleTranslation.js"></script>
+    <script src="/modules/utils/aframe/selectCamera.js"></script>
+  </head>
+
+  <body>
+    <p style="display: none">
+      <a href="https://clustrmaps.com/site/1ar2f" title="Visit tracker"
+        ><img
+          src="//www.clustrmaps.com/map_v2.png?d=b_oWfSB8TUOlxHdLX1ftmUWKcboQmBFu1xmiYd_PbS4&cl=ffffff"
+          alt=""
+          width="1%"
+          height="1%"
+      /></a>
+    </p>
+    <!-- Header -->
+    <header id="header">
+      <div class="row">
+        <figure>
+          <tubes-icon></tubes-icon>
+        </figure>
+        <h1 class="activity-title" data-i18n="bonds.acidBase.title"></h1>
+      </div>
+    </header>
+
+    <!-- UI Components -->
+    <back-anchor></back-anchor>
+    <loader-component></loader-component>
+
+    <!-- Feedback Modal -->
+    <feedback-prompt></feedback-prompt>
+
+    <!-- camera controls -->
+    <div id="cam-container" class="camera-container small-menu hide column">
+      <div class="triangle-temp"></div>
+      <flip-video class="icon-margin"></flip-video>
+      <swap-camera class="hide icon-margin"></swap-camera>
+      <flip-graphics class="icon-margin"></flip-graphics>
+    </div>
+
+    <!-- Zoom controls -->
+    <div id="zoom-container" class="zoom-container small-menu hide column">
+      <div class="triangle-temp"></div>
+      <scale-graphics
+        class="small-icon-margin"
+        id="scale-up"
+        type="up"
+      ></scale-graphics>
+      <div class="line horizontal"></div>
+      <scale-graphics
+        class="small-icon-margin"
+        id="scale-down"
+        type="down"
+      ></scale-graphics>
+    </div>
+
+    <!-- Side buttons -->
+    <div class="side-menu column">
+      <camera-icon class="icon-margin"></camera-icon>
+      <reset-activity class="icon-margin"></reset-activity>
+      <zoom-icon class="icon-margin"></zoom-icon>
+      <toggle-menu class="icon-margin"></toggle-menu>
+    </div>
+
+    <!-- Bottom Menu -->
+    <div class="selection-menu">
+      <div class="marker">
+        <img
+          class="marker-sample"
+          src="/assets/img/0.png"
+          alt="sample marker"
+          id="marker-image-1"
+        />
+        <rotation-controls
+          id="rotation-marker-1"
+          marker="1"
+          type="embedded"
+        ></rotation-controls>
+        <div class="options" id="marker-options-1">
+          <div class="triangle"></div>
+          <enable-gestures class="gesture-icon" id="marker1"></enable-gestures>
+        </div>
+      </div>
+      <span class="line"></span>
+      <div class="marker">
+        <img
+          class="marker-sample left-margin"
+          src="/assets/img/2.png"
+          alt="sample marker"
+          id="marker-image-2"
+        />
+        <rotation-controls
+          id="rotation-marker-2"
+          marker="2"
+          type="embedded"
+        ></rotation-controls>
+        <div class="options" id="marker-options-2">
+          <div class="triangle"></div>
+          <enable-gestures class="gesture-icon" id="marker2"></enable-gestures>
+        </div>
+      </div>
+      <div class="extra-info">
+        <toggle-instructions class="extra-info-icon"></toggle-instructions>
+        <toggle-description class="extra-info-icon"></toggle-description>
+      </div>
+    </div>
+
+    <!-- Overlays -->
+    <activity-overlay id="instructions" default="open" type="instructions">
+      <span slot="title" data-i18n="bonds.acidBase.title"></span>
+      <span slot="instructions" data-i18n="bonds.instructions"></span>
+    </activity-overlay>
+
+    <activity-overlay id="description" default="hidden" type="description">
+      <span slot="title" data-i18n="bonds.acidBase.title"></span>
+      <span slot="description" data-i18n="bonds.acidBase.description"></span>
+    </activity-overlay>
+
+    <activity-overlay id="menu" default="hidden" type="menu">
+      <span slot="title">Biochem.edu</span>
+    </activity-overlay>
+
+    <a-scene
+      embedded
+      arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3_HAMMING63;"
+      id="scene"
+      renderer="logarithmicDepthBuffer: true;"
+      interactive-molecules
+      gesture-detector
+      rotate-molecules
+      loader
+      vr-mode-ui="enabled: false"
+      loading-screen="enabled: false"
+      switch-camera
+    >
+      <a-marker type="barcode" value="0" id="lysA">
+        <a-entity
+          rotation="0 0 0"
+          listen-to-flip
+          gesture-handler="linkedMarker: #marker1B"
+          listen-to-scale
+          id="marker1A"
+        >
+          <a-sphere
+            id="lys1A"
+            position="0.000   0.000   0.000"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="lys2A"
+            position="-0.6035  -0.3175  -0.347"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="lys3A"
+            position="-1.2480  -0.037  -0.0455"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="lys4A"
+            position="-1.851  -0.3545  -0.3925"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="lys5A"
+            position="-2.496  -0.0745  -0.0905"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="lys6A"
+            position="-3.075  -0.3795  -0.4235"
+            color="blue"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="lys7A"
+            position="-0.5875 -0.2035 -0.88"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys8A"
+            position="-0.5895 -0.858 -0.2765"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys9A"
+            position="-1.264 -0.1515 0.4875"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys10A"
+            position="-1.2615 0.503 -0.1155"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys11A"
+            position="-1.8355 -0.2405 -0.925"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys12A"
+            position="-1.8375 -0.895 -0.322"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys13A"
+            position="-2.5115 -0.1885 0.442"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys14A"
+            position="-2.5095 0.466 -0.161"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys15A"
+            position="-3.057 -0.8825 -0.3935"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys16A"
+            position="-2.9455  -0.524  -0.89"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys17A"
+            position="-3.507 -0.202 -0.233"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+        </a-entity>
+      </a-marker>
+
+      <a-marker type="barcode" value="1" id="lysB">
+        <a-entity
+          rotation="180 180 0"
+          listen-to-flip
+          gesture-handler="linkedMarker: #marker1A"
+          listen-to-scale
+          id="marker1B"
+        >
+          <a-sphere
+            id="lys1B"
+            position="0.000   0.000   0.000"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="lys2B"
+            position="-0.6035  -0.3175  -0.347"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="lys3B"
+            position="-1.2480  -0.037  -0.0455"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="lys4B"
+            position="-1.851  -0.3545  -0.3925"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="lys5B"
+            position="-2.496  -0.0745  -0.0905"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="lys6B"
+            position="-3.075  -0.3795  -0.4235"
+            color="blue"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="lys7B"
+            position="-0.5875 -0.2035 -0.88"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys8B"
+            position="-0.5895 -0.858 -0.2765"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys9B"
+            position="-1.264 -0.1515 0.4875"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys10B"
+            position="-1.2615 0.503 -0.1155"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys11B"
+            position="-1.8355 -0.2405 -0.925"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys12B"
+            position="-1.8375 -0.895 -0.322"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys13B"
+            position="-2.5115 -0.1885 0.442"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys14B"
+            position="-2.5095 0.466 -0.161"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys15B"
+            position="-3.057 -0.8825 -0.3935"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys16B"
+            position="-2.9455  -0.524  -0.89"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="lys17B"
+            position="-3.507 -0.202 -0.233"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+        </a-entity>
+      </a-marker>
+
+      <a-marker type="barcode" value="2" id="gluA">
+        <a-entity
+          rotation="0 0 0"
+          listen-to-flip
+          gesture-handler="linkedMarker: #marker2B"
+          listen-to-scale
+          id="marker2A"
+        >
+          <a-sphere
+            id="glu1A"
+            position="0.000   0.000   0.000"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="glu2A"
+            position="-0.6365 -0.3515 -0.238"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="glu3A"
+            position="-1.2485 0.0445 -0.006"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="glu4A"
+            position="-1.8755 -0.3015 -0.2405"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="glu5A"
+            position="-1.836 -0.8175 -0.563"
+            color="red"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="glu6A"
+            position="-2.4215 -0.066 -0.1075"
+            color="red"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="glu7A"
+            position="-0.635 -0.381 -0.7825"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="glu8A"
+            position="-0.6555 -0.854 -0.0285"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="glu9A"
+            position="-1.25 0.0745 0.538"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="glu10A"
+            position="-1.2295 0.5475 -0.2155"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="glu11A"
+            position="-2.8215 -0.166 -0.4075"
+            color="white"
+            radius="0.3"
+            visible="false"
+          ></a-sphere>
+          <a-sphere
+            id="glu12A"
+            position="-2.236 -0.9175 -0.863"
+            color="white"
+            radius="0.3"
+            visible="false"
+          ></a-sphere>
+        </a-entity>
+      </a-marker>
+
+      <a-marker type="barcode" value="3" id="gluB">
+        <a-entity
+          rotation="180 180 0"
+          listen-to-flip
+          gesture-handler="linkedMarker: #marker2A"
+          listen-to-scale
+          id="marker2B"
+        >
+          <a-sphere
+            id="glu1B"
+            position="0.000   0.000   0.000"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="glu2B"
+            position="-0.6365 -0.3515 -0.238"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="glu3B"
+            position="-1.2485 0.0445 -0.006"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="glu4B"
+            position="-1.8755 -0.3015 -0.2405"
+            color="grey"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="glu5B"
+            position="-1.836 -0.8175 -0.563"
+            color="red"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="glu6B"
+            position="-2.4215 -0.066 -0.1075"
+            color="red"
+            radius="0.4"
+          ></a-sphere>
+          <a-sphere
+            id="glu7B"
+            position="-0.635 -0.381 -0.7825"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="glu8B"
+            position="-0.6555 -0.854 -0.0285"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="glu9B"
+            position="-1.25 0.0745 0.538"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="glu10B"
+            position="-1.2295 0.5475 -0.2155"
+            color="white"
+            radius="0.3"
+          ></a-sphere>
+          <a-sphere
+            id="glu11B"
+            position="-2.8215 -0.166 -0.4075"
+            color="white"
+            radius="0.3"
+            visible="false"
+          ></a-sphere>
+          <a-sphere
+            id="glu12B"
+            position="-2.236 -0.9175 -0.863"
+            color="white"
+            radius="0.3"
+            visible="false"
+          ></a-sphere>
+        </a-entity>
+      </a-marker>
+
+      <!-- Connecting charged atoms -->
+      <a-entity id="bridge">
+        <a-sphere
+          id="bond1"
+          radius="0.05"
+          color="yellow"
+          connector="src: #lys17A; dest: #glu5B; alpha: 0.1"
+        ></a-sphere>
+        <a-sphere
+          id="bond2"
+          radius="0.05"
+          color="yellow"
+          connector="src: #lys17A; dest: #glu5B; alpha: 0.2"
+        ></a-sphere>
+        <a-sphere
+          id="bond3"
+          radius="0.05"
+          color="yellow"
+          connector="src: #lys17A; dest: #glu5B; alpha: 0.3"
+        ></a-sphere>
+        <a-sphere
+          id="bond4"
+          radius="0.05"
+          color="yellow"
+          connector="src: #lys17A; dest: #glu5B; alpha: 0.4"
+        ></a-sphere>
+        <a-sphere
+          id="bond5"
+          radius="0.05"
+          color="yellow"
+          connector="src: #lys17A; dest: #glu5B; alpha: 0.5"
+        ></a-sphere>
+        <a-sphere
+          id="bond6"
+          radius="0.05"
+          color="yellow"
+          connector="src: #lys17A; dest: #glu5B; alpha: 0.6"
+        ></a-sphere>
+        <a-sphere
+          id="bond7"
+          radius="0.05"
+          color="yellow"
+          connector="src: #lys17A; dest: #glu5B; alpha: 0.7"
+        ></a-sphere>
+        <a-sphere
+          id="bond8"
+          radius="0.05"
+          color="yellow"
+          connector="src: #lys17A; dest: #glu5B; alpha: 0.8"
+        ></a-sphere>
+        <a-sphere
+          id="bond9"
+          radius="0.05"
+          color="yellow"
+          connector="src: #lys17A; dest: #glu5B; alpha: 0.9"
+        ></a-sphere>
+      </a-entity>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+    <script src="/modules/utils/handleFlips.js"></script>
+    <script src="/modules/utils/handleOverlays.js"></script>
+    <script src="/modules/utils/handleGestures.js"></script>
+    <script src="/js/handleSession.js"></script>
+  </body>
+</html>

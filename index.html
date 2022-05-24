@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="/js/support.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-91563073-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-91563073-2");
+    </script>
+
+    <title>Biochem.edu</title>
+    <meta name="google-site-verification" content="9GMKRXgbxfzYT5IWp24C-POlTBeWbuymbmq8P7ho5d8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- Translation Libraries -->
+    <script src="/lib/i18n/i18next.min.js"></script>
+    <script src="/lib/i18n/i18next-wc.js"></script>
+    <script src="/lib/i18n/loc-i18next.min.js"></script>
+    <script src="/lib/i18n/i18nextBrowserLanguageDetector.js"></script>
+    <script src="/lib/i18n/i18nextHttpBackend.min.js"></script>
+    <script src="/lib/sweetalert.min.js"></script>
+
+    <!-- Web Components -->
+    <script src="/components/footer/index.js"></script>
+    <script src="/components/app-header/index.js"></script>
+    <script src="/components/icons/molecule/index.js"></script>
+    <script src="/components/icons/atom/index.js"></script>
+    <script src="/components/icons/tubes/index.js"></script>
+    <script src="/components/icons/dna/index.js"></script>
+    <script src="/components/icons/bacteria/index.js"></script>
+    <script src="/components/app-instructions/index.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <app-header></app-header>
+      <app-instructions></app-instructions>
+
+      <section class="home-banner column">
+        <figure>
+          <molecule-icon big no-strokes></molecule-icon>
+        </figure>
+        <h1 class="home-banner-title" data-i18n="app.title"></h1>
+        <p class="home-banner-text" data-i18n="app.description"></p>
+      </section>
+
+      <section class="container">
+        <div class="module">
+          <div class="module-header row" id="modeling">
+            <figure>
+              <molecule-icon></molecule-icon>
+            </figure>
+            <h2 class="module-title" data-i18n="modelingKit.title"></h2>
+            <div class="triangle"></div>
+          </div>
+
+          <div class="module-activities row empty-grid">
+            <a
+              class="activity column short-text"
+              href="/modules/virtual-modeling-kit"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="orbitals.modelingKit.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="orbitals.modelingKit.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/virtual-modeling-kit-2"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="orbitals.modelingKit.title2"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="orbitals.modelingKit.description2"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/virtual-modeling-kit-3"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="orbitals.modelingKit.title3"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="orbitals.modelingKit.description3"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a class="activity column short-text" href="/pages/pdb2ar.html">
+              <h3 class="activity-title">Өзіңіздің webAR көріністерін жасаңыз</h3>
+              <p class="activity-description">
+                PDB құрылымын қамтамасыз етіңіз және оның ақуыздарын, нуклеин қышқылдарын және шағын молекулаларын көрсету жолын таңдап, webAR сеанстарын текше маркермен немесе маркерлерсіз кеңістікте пайдалануға дайын етіп қайтарыңыз. Атомдық координаттардан AR көріністерін жылдам құру үшін пайдалы.                
+              </p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr class="line container" />
+
+      <section class="container">
+        <div class="module">
+          <div class="module-header row" id="orbitals">
+            <figure>
+              <atom-icon></atom-icon>
+            </figure>
+            <h2 class="module-title" data-i18n="orbitals.title"></h2>
+            <div class="triangle"></div>
+          </div>
+
+          <div class="module-activities row">
+            <a
+              class="activity column short-text"
+              href="/modules/orbitals-and-molecular-shapes/atomic-orbitals/atomic-orbitals.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="orbitals.atomicOrbitals.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="orbitals.atomicOrbitals.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/orbitals-and-molecular-shapes/molecular-orbitals/molecular-orbitals.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="orbitals.molecularOrbitals.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="orbitals.molecularOrbitals.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/orbitals-and-molecular-shapes/molecular-shapes/molecular-shapes.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="orbitals.molecularShapes.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="orbitals.molecularShapes.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/orbitals-and-molecular-shapes/remake-hassan/remake.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="orbitals.webRemake.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="orbitals.webRemake.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr class="line container" />
+
+      <section class="container">
+        <div class="module">
+          <div class="module-header row" id="bonds">
+            <figure>
+              <tubes-icon></tubes-icon>
+            </figure>
+            <h2 class="module-title" data-i18n="bonds.title"></h2>
+            <div class="triangle"></div>
+          </div>
+
+          <div class="module-activities row">
+            <a
+              class="activity column"
+              href="/modules/acids-and-bases/water-water/water.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="bonds.waterProtonation.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="bonds.waterProtonation.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column"
+              href="/modules/acids-and-bases/water-acetate/water-acetate.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="bonds.acidDeprotonation.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="bonds.acidDeprotonation.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column"
+              href="/modules/acids-and-bases/water-ammonium/water-ammonuim.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="bonds.ammoniaProtonation.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="bonds.ammoniaProtonation.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column"
+              href="/modules/acids-and-bases/hbonds-htransfer/hbonds-htransfers.html"
+            >
+              <h3 class="activity-title" data-i18n="bonds.acidBase.title"></h3>
+              <p
+                class="activity-description"
+                data-i18n="bonds.acidBase.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr class="line container" />
+
+      <section class="container">
+        <div class="module">
+          <div class="module-header row" id="molecules">
+            <figure>
+              <dna-icon></dna-icon>
+            </figure>
+            <h2 class="module-title" data-i18n="macromolecules.title"></h2>
+            <div class="triangle"></div>
+          </div>
+
+          <div class="module-activities row">
+            <a
+              class="activity column short-text"
+              href="/modules/atomic-structures/protein-dna/protein-dna.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="macromolecules.proteinDNA.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="macromolecules.proteinDNA.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/atomic-structures/xray-docking/xray-docking.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="macromolecules.peptide.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="macromolecules.peptide.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/atomic-structures/secondary-structures/secondary-structures.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="macromolecules.protein.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="macromolecules.protein.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/atomic-structures/example-structures/example-structures.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="macromolecules.example.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="macromolecules.example.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/atomic-structures/protein-interactions/"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="macromolecules.proteinInteractions.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="macromolecules.proteinInteractions.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr class="line container" />
+
+      <section class="container">
+        <div class="module">
+          <div class="module-header row" id="assemblies">
+            <figure>
+              <bacteria-icon></bacteria-icon>
+            </figure>
+            <h2 class="module-title" data-i18n="biological.title"></h2>
+            <div class="triangle"></div>
+          </div>
+
+          <div class="module-activities row">
+            <a
+              class="activity column short-text"
+              href="/modules/biological-assemblies/npc/npc.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="biological.nuclear.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="biological.nuclear.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/biological-assemblies/ribosome/ribosome.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="biological.ribosome.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="biological.ribosome.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/biological-assemblies/virus/virus.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="biological.bacteriophage.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="biological.bacteriophage.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/biological-assemblies/sarscov2/sarscov2.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="biological.sarscov2.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="biological.sarscov2.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/biological-assemblies/bacterial-pilus/bacterial-pilus.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="biological.bacterial.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="biological.bacterial.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="activity column short-text"
+              href="/modules/biological-assemblies/nucleosome/nucleosome.html"
+            >
+              <h3
+                class="activity-title"
+                data-i18n="biological.nucleosome.title"
+              ></h3>
+              <p
+                class="activity-description"
+                data-i18n="biological.nucleosome.description"
+              ></p>
+              <svg
+                class="arrow-anchor"
+                width="36"
+                height="35"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="circle" width="40" height="40" rx="20" />
+                <path
+                  class="arrow-path"
+                  d="M25.3709 19.3206L18.3927 11.7842C17.9997 11.3598 17.3297 11.3563 16.9323 11.7765L16.6429 12.0826C16.2811 12.4652 16.278 13.0627 16.6357 13.4491L22.0723 19.3206C22.4273 19.704 22.4273 20.296 22.0723 20.6794L16.6571 26.5277C16.3049 26.9081 16.3018 27.4947 16.65 27.8788L16.9335 28.1914C17.3276 28.6261 18.0095 28.6297 18.4081 28.1992L25.3709 20.6794C25.7259 20.296 25.7259 19.704 25.3709 19.3206Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+
+    <div class="policy-banner row hidden" id="privacy">
+      <p data-i18n="[prepend]app.policyMsg">
+        <span>
+          <a
+            target="_blank"
+            href="/assets/policy.pdf"
+            data-i18n="[prepend]app.learnMore"
+          ></a>
+        </span>
+      </p>
+      <button id="accept-privacy">Ok</button>
+    </div>
+
+    <script src="/js/handleExpansionPanels.js"></script>
+    <script src="/js/translate.js"></script>
+    <script src="/js/handlePrivacyBanner.js"></script>
+    <script src="/js/handleSession.js"></script>
+    <script src="/js/handleInstructions.js"></script>
+    <script src="/js/handleAlerts.js"></script>
+  </body>
+</html>

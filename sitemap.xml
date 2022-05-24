@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://biochem.kz/</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/virtual-modeling-kit/</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/virtual-modeling-kit-2/</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/virtual-modeling-kit-3/</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/pages/pdb2ar.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/orbitals-and-molecular-shapes/atomic-orbitals/atomic-orbitals.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/orbitals-and-molecular-shapes/molecular-orbitals/molecular-orbitals.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/orbitals-and-molecular-shapes/molecular-shapes/molecular-shapes.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/orbitals-and-molecular-shapes/remake-hassan/remake.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/acids-and-bases/water-water/water.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/acids-and-bases/water-acetate/water-acetate.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/acids-and-bases/water-ammonium/water-ammonuim.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/acids-and-bases/hbonds-htransfer/hbonds-htransfers.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/atomic-structures/protein-dna/protein-dna.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/atomic-structures/xray-docking/xray-docking.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/atomic-structures/secondary-structures/secondary-structures.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/atomic-structures/example-structures/example-structures.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/atomic-structures/protein-interactions/</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/biological-assemblies/npc/npc.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/biological-assemblies/ribosome/ribosome.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/biological-assemblies/virus/virus.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/biological-assemblies/sarscov2/sarscov2.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/biological-assemblies/bacterial-pilus/bacterial-pilus.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/modules/biological-assemblies/nucleosome/nucleosome.html</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/assets/policy.pdf</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/assets/markers/cube.pdf</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://biochem.kz/assets/markers/cube2.pdf</loc>
+  <lastmod>2022-05-21T19:14:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
