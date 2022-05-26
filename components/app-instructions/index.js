@@ -437,7 +437,7 @@ const InstructionsContent = /* html */ `
         </div>
 
         <div id="step-two" class="step-content step-hidden">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZbVcJCLg3vQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZbVcJCLg3vQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <p class="text">
             <intl-message key="app.prepare"></intl-message>
             <span>
@@ -454,7 +454,7 @@ const InstructionsContent = /* html */ `
         </div>
 
         <div id="step-three" class="step-content step-hidden">
-          <iframe id="video-3" class="video" src="https://www.youtube.com/embed/GuYMqG8kce8" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DDCyisvNLQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <p class="text">
             <intl-message key="app.selectActivity"></intl-message>
           </p>
