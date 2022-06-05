@@ -1,0 +1,303 @@
+{
+    "menu": {
+        "about": "Bız turaly",
+        "getInTouch": "Bailanys",
+        "Biomol": "Biomol",
+        "solobilim": "Solobilim",
+        "language": "Tıl",
+        "instructions": "Nūsqau",
+        "markers": "Marker"
+    },
+    "app": {
+      "title": "Biochem.edu",
+      "description": "Tolyqtyrylğan şyndyq (AR) tehnologiasy arqyly himia jäne biologia boiynşa bılım beruge arnalğan veb-platforma",
+      "policy": "Biochem v2.0 (build#8) 2022. All rights reserved.",
+      "policyMsg": "Bız cookie faildaryn bızdıñ saittağy täjıribeñızdı jaqsartu üşın paidalanamyz. Biochem.edu veb-saityn paidalanu arqyly sız bızdıñ qūpialylyq saiasatymyzben kelısesız.",
+      "learnMore": "Köbırek bılu üşın",
+      "contactUs": "Contact us",
+      "feedbackMsg": "Platformany qalai paidalanu kerektıgın bılmeisız be?",
+      "sure": "İä!",
+      "dismiss": "Bılemın",
+      "rotate": "Ainaldyru",
+      "submit": "Jıberu",
+      "skip": "Ötkızu",
+      "next": "Alğa",
+      "close": "Jabu",
+      "viewInYourSpace": "Keñıstıgıñızde qarañyz",
+      "returnToAR": "AR rejimıne oralu",
+      "cartoon": "Cartoon",
+      "sticks": "Taiaqşalar",
+      "interactions": "Özara ärekettesuler",
+      "markers": "Basyp şyğaru jäne qūrastyru nūsqaulary bar AR markerlerın tabu üşın osy jerdı basyñyz",
+      "preferredLang": "Qalağan tıldı tañdañyz",
+      "welcome": "Biochem.edu saityna qoş keldıñız!",
+      "welcomeMsg": "Tolyqtyrylğan şyndyq (AR) tehnologiasy arqyly himia jäne biologia boiynşa bılım beruge arnalğan veb-platforma",
+      "prepare": "Biochem turaly",
+      "markersWithLink": "Markerler",
+      "reset": "Qalpyna keltıru",
+      "zoom": "Masştabtau",
+      "pdbOptions": "Markerlerdegı molekulalar",
+      "cameraOptions": "Kamera jäne köru opsialary",
+      "controls": "Temperatura men mehanikalyq baqylau",
+      "flipMolecule": "Flip molekula",
+      "mirrorVideo": "Aina beine",
+      "tempOptions": "Temperatura men mehanikalyq baqylau",
+      "transparency": "Möldırlık",
+      "selectActivity": "Sabaqty tañdap, läzzat alyñyz!"
+    },
+    "orbitals": {
+      "title": "Orbitäldar jäne molekulalyq pışınder",
+      "atomicOrbitals": {
+        "title": "Atom orbitäldary jäne VSEPR teoriasy",
+        "description": "Barlyq eñ köp taralğan taza jäne gibridtı atomdyq orbitäldardy jäne valenttık qabyqtağy elektrondardyñ tejelu teoriasyndağy (VSEPR) siaqty negızgı molekulalyq geometrialardy vizualizasialañyz jäne salystyryñyz.",
+        "instructions": "Ärbır AR markerınde körsetıletın orbitaldy nemese molekulany tañdañyz. Sondai-aq ainaldyru üşın bır sausaqty jäne nysandardy ülkeitu üşın ekı sausaqty paidalanuğa bolady."
+      },
+      "molecularOrbitals": {
+        "title": "Molekulalyq orbitäldar jäne pışınder",
+        "description": "Bırneşe şağyn molekulalar üşın aldyn ala eseptelgen barlyq molekulalyq orbitäldardy vizualizasialañyz jäne salystyryñyz.",
+        "instructions": "Ärbır AR markerınde körsetıletın molekulany tañdañyz. Sondai-aq ainaldyru üşın bır sausaqty jäne nysandardy ülkeitu üşın ekı sausaqty paidalanuğa bolady."
+      },
+      "molecularShapes": {
+        "title": "VSEPR boiynşa molekulalyq pışınder",
+        "description": "Valenttık qabyqşanyñ elektrondy jūbynyñ kerı yğysuy (VSEPR) teoriasyna säikes pışınderdıñ negızgı türlerınıñ ärqaisysyna arnalğan molekulalardyñ mysaldary.",
+        "instructions": "VSEPR teoriasymen tüsındırıletın ärtürlı molekulalyq pışınderdı köru üşın aşylmaly mäzırlerden mysaldardy tañdañyz."
+      },
+      "webRemake": {
+        "title": "Martinez-Hung jäne t.b. 2017 veb-remeikı",
+        "description": "Kristaldyq qūrylymdardyñ, TRPEV pışınderınıñ jäne su keşenderınıñ mysaldary Martinez-Hung jäne t.b. Revista Cubana de Quimica 2017 aldyñğy jarialanymyndağy, webAR üşın qaita tağaiyndalğan.",
+        "instructions": "Aşylmaly mäzırlerden mysaldardy tañdañyz, egjei-tegjeilı aqparat alu üşın tüpnūsqalyq basylymdy qarañyz."
+      },
+      "modelingKit": {
+        "title": "Virtualdy modeldeu jinağy",
+        "title2": "Virtualdy modeldeu jinağy 2.0",
+        "title3": "Virtualdy modeldeu jinağy 3.0",
+        "description": "Onyñ qūrylymyn jäne AR-dağy qozğalysyn zertteu üşın *kez kelgen* molekulany atomdyq koordinattarynan körsetıñız.",
+        "description2": "Onyñ qūrylymy men dinamikasyn zertteu üşın kez kelgen molekulany körsetıñız. Endı ekı marker bar, özıñızdıñ molekulalaryñyzdy jäne molekulalyq qozğalystar men özara ärekettesulerdı köru üşın küş örısın salu mümkındıgı",
+        "description3": "Modeldeu qorabynda ornalasqan barlyq qajettı molekulalardyñ qūrylymdary men özara ärekettesulerın zertteñız.",
+        "instructions": "Aldyn ala ornatylğan mysaldy tañdañyz nemese özıñızdıñ atomdyq koordinattaryñyzdy qoiyñyz, sodan keiın AR täjıribesın ıske qosyñyz. Qozğalystardy köru üşın temperaturany köterıñız.",
+        "temperature": "Temperatura:", 
+        "sticks": "Taiaqşalar",
+        "spheres": "Şarlar",
+        "pdbInstructions": " Tömendegı opsialardyñ bırımen är marker üşın molekulany daiyndañyz jäne «AR bastau”",
+        "marker": "Marker",
+        "getMarker": "Marker alyñyz",
+        "loadFile": "Faildy jükteu",
+        "load": "Jükteu",
+        "chooseExample": "Aldyn ala anyqtalğan mysaldar",
+        "examples": "--Mysaldar--",
+        "startAR": "AR bastañyz",
+        "placeholder": "Molekulany osy jerge köşırıp qoiyñyz",
+        "yourMolecule": "Sızdıñ jeke molekulañyz",
+        "searchBuild": "Izdeu/qūrastyru",
+        "jmeInstructions": "Mūnda molekulalardy qūrastyruğa, ızdeuge jäne öñdeuge bolady. Molekula daiyn bolğanda, PDB jükteu üşın jalğastyru tüimesın basyñyz.",
+        "search": "Mälımetterdı bazadan ızdeu",
+        "cancel": "Artqa",
+        "continue": "Jalğastyru",
+        "mechanics": "Mehanika",
+        "electrostatics": "Elektrostatika",
+        "hBonds": "Sutektık bailanystardy körsetu",
+        "clashes": "Qaqtyğystardy körsetu",
+        "showSpheres": "Atomdar şar tärızdı körsetu"
+      }
+    },
+    "bonds": {
+      "title": "Sutektık bailanys, qyşqyldar men negızder",
+      "instructions": "Ekı molekulağa ärtürlı jağynan jaqyndau arqyly sutegı bailanysy men protonnyñ tasymaldanuyn zertteu üşın AR markerlerın jyljytyñyz",
+      "waterProtonation": {
+        "title": "Su protonasiasynyñ tepe-teñdıgı",
+        "description": "Ekı su molekulasynyñ sutegı bailanysyn qalai ornatatynyn jäne gidroni kationy, beitarap su jäne gidroksidtı anion arasynda özara türlenetın protondardy tasymaldaitynyn zertteñız. Tepe-teñdık dinamikalyq bolyp tabylady jäne sudyñ disosiasialanu konstantasy Kv paida bolady."
+      },
+      "acidDeprotonation": {
+        "title": "Sudağy qyşqyldyñ protonasiasynyñ tepe-teñdıgı",
+        "description": "Sırke qyşqylynyñ molekulasy su molekulasymen sutegı bailanysyn qalai ornatatynyn jäne terıs zarädtalğan protondy tasymaldap, gidroni kationyn qūraitynyn zertteñız. Sūr atomdar – S, qyzyl – O, aq – Hs. Būl dinamikalyq tepe-teñdık qyşqyldyq konstantasyn beredı, Ka."
+      },
+      "ammoniaProtonation": {
+        "title": "Sudağy amiak protonasiasynyñ tepe-teñdıgı",
+        "description": "Amiak molekulasynyñ su molekulasymen sutegı bailanysyn qalai ornatatynyn jäne protondy qabyldap, oñ zarädtalyp, gidroksid anionyn tüzetının zertteñız. Sūr atomdar – S, qyzyl – O, aq – Hs, kök – N. Būl dinamikalyq tepe-teñdık negızgı konstanta Kb paida bolady."
+      },
+      "acidBase": {
+        "title": "Qyşqyldyq jäne negızdık aminqyşqyldarynyñ tızbekterı arasyndağy tepe-teñdık",
+        "description": "Glutamat pen lizinnıñ büiırlık tızbekterı protondardy almastyru arqyly zarädtalğan jäne beitarap türler arasynda qalai özgeretının zertteñız. Sūr atomdar – S, qyzyl – O, aq – Hs, kök – N. Sary nükteler H men O nemese N arasyndağy sutektık bailanystardy körsetedı."
+      }
+    },
+    "macromolecules": {
+      "title": "Biologialyq makromolekulalardyñ atomdyq qūrylymy",
+      "proteinDNA": {
+        "title": "Belok-DNQ keşenı",
+        "description": "Transkripsia faktorynyñ domenın onyñ tuystyq DNQ-ğa bekıtu; paida bolğan elektrostatikalyq ärekettesulerdı tekserıñız. Būl mysal PDB 1FJL eksperimenttık qūrylymynan alynğan.",
+        "instructions": "Ärbır molekulany bır AR markerımen jürgızıp, dūrys qondyrylğan oryndy tabuğa tyrysyñyz."
+      },
+      "peptide": {
+        "title": "Peptidtı elektronnyñ tyğyzdyğy boiynşa bekıtıñız",
+        "description": "Rentgen säulelerınıñ difraksiasy arqyly anyqtalatyn elektrondy tyğyzdyq kartasyna peptidtıñ ekı bölıgın bekıtıñız. Būl mysal eksperimenttık qūrylymdardyñ qalai alynğany turaly tüsınık beredı. Ol PDB 3HYD.7 eksperimenttık qūrylymnan keledı",
+        "instructions": "Atomdardyñ bırınşı tobyn qondyru üşın markerdı paidalanyñyz jäne ol qondyrylğannan keiın sızde ekınşı jinaqty qondyru mümkındıgı bolady. Soñynda sız tolyq molekulanyñ onyñ elektrondy tyğyzdyğyna säikestıgın teksere alasyz."
+      },
+      "protein": {
+        "title": "Beloktardyñ ekınşılık qūrylymdary jäne tūraqtandyrğyş ärekettesulerı",
+        "description": "Egjei-tegjeilı atom qūrylymyn, sutegı bailanystaryn jäne aquyzdyñ qaitalama qūrylymdaryn tūraqtandyratyn tūz köpırlerın tekserıñız. Sızde bır AR markerınde älfa spiräl, ekınşısınde beta parağy bar.",
+        "instructions": "Türlı körınıster arasynda auysu üşın tüimelerdı basyñyz."
+      },
+      "example": {
+        "title": "Biomalekulalardyñ atomdyq qūrylymdaryn qūrastyru",
+        "description": "Biologialyq makromolekulalardyñ aldyn ala jasalğan körınısterınıñ jiyntyğyn tekserıñız.",
+        "instructions": "Är markerde bır jüienı köru üşın aşylmaly mäzırlerdegı mysaldardyñ arasynan tañdañyz.",
+        "prot": {
+          "title": "DNQ bailanystyratyn aquyz",
+          "description": "Cartoon retınde körsetılgen DNQ-ny bailanystyratyn aquyz, DNQ-ny bailanystyruğa qatysatyn qaldyqtar taiaqşa türınde körsetılgen."
+        },
+        "dna": {
+          "title": "Qos tızbektı DNQ bölıgı",
+          "description": "B konformasiasyndağy qos tızbektı DNQ bölıgı"
+        },
+        "prot-dna": {
+          "title": "Belok-DNQ keşenı",
+          "description": "İnterfeistegı qaldyqtar taiaqşa türınde beinelengen onyñ tuystyq DNQ-men bailanysqan aquyz"
+        },
+        "3hyd": {
+          "title": "Barlyq atomdary bar qysqa peptid",
+          "description": "Sutekterdı qosa alğanda, tolyq atomdyq bölşekterde taiaqşalar türınde körsetılgen qysqa peptid"
+        },
+        "1vyq": {
+          "title": "Ligandtary bar trimerlı aquyz",
+          "description": "Berri jäne basqalar Biochem Mol Biol Ed 2014 siaqty 3 ligandtary bar trimerlı aquyz."
+        },
+        "a-dna": {
+          "title": "A-DNQ",
+          "description": "A konformasiasyndağy qos tızbektı DNQ bölıgı"
+        },
+        "b-dna": {
+          "title": "B-DNQ",
+          "description": "B konformasiasyndağy qos tızbektı DNQ bölıgı"
+        },
+        "z-dna": {
+          "title": "C-DNQ",
+          "description": "Z konformasiasyndağy qos tızbektı DNQ bölıgı"
+        }
+      },
+      "proteinInteractions": {
+        "title": "B-zip transkripsia faktoryndağy aquyz-belok jäne aquyz-DNQ özara ärekettesuı",
+        "description": "Dimerlı leisin-zip negızındegı transkripsia faktoryn tūraqtandyratyn barlyq özara ärekettesulerdı jäne onyñ maqsatty DNQ-men qalai ärekettesetının egjei-tegjeilı tekserıñız."
+      }
+    },
+    "biological": {
+      "title": "Ülken biologialyq jinaqtar",
+      "nuclear": {
+        "title": "İadrolyq keuekter keşenı",
+        "description": "In situ alynğan adamnyñ iadrolyq keuek keşenınıñ elektrondy mikroskopialyq kartasy (EMDB-3103)",
+        "instructions": "AR markerınde nemese eden nemese üstel siaqty tegıs köldeneñ betke tıkelei tūryp, 3D rejimınde tekserıñız"
+      },
+      "ribosome": {
+        "title": "Ribosoma mRNQ jäne tRNQ-men jüktelgen",
+        "description": "A/P pozisiasyndağy tRNQ iRNQ jäne P/E pozisiasyndağy basqa tRNQ jūptastyrylğan sütqorektılerdıñ ribosomasynyñ krioelektrondy mikroskopialyq qūrylymy (PDB 6HCJ).",
+        "instructions": "AR markerınde nemese eden nemese üstel siaqty tegıs köldeneñ betke tıkelei tūryp, 3D rejimınde tekserıñız"
+      },
+      "bacteriophage": {
+        "title": "Bakteria qabyrğasyndağy bakteriofag",
+        "description": "Ekı bakterialyq membrana arqyly inesın tesken bakteriofagtyñ krioelektrondy mikroskopiasy (EMD-9010).",
+        "instructions": "AR markerınde nemese eden nemese üstel siaqty tegıs köldeneñ betke tıkelei tūryp, 3D rejimınde tekserıñız"
+      },
+      "sarscov2": {
+        "title": "SARS-Cov-2 ūşy – adamnyñ ACE2 keşenı",
+        "description": "Adamnyñ ACE2 (PDB identifikatorlary 6VYB, 6M17 jäne 6M0J) bailanysqan SARS-Cov-2 spik proteinınıñ integrativtı modelı, ärqaisysy membranalyq pachqa engızılgen.",
+        "instructions": "AR markerınde nemese eden nemese üstel siaqty tegıs köldeneñ betke tıkelei tūryp, 3D rejimınde tekserıñız"
+      },
+      "bacterial": {
+        "title": "Bakterialyq pilus negızı",
+        "description": "Ekı jasuşa membranasynyñ bölıkterı men peptidoglikan (PDB 3JC8 + EMD-3247).",
+        "instructions": "AR markerınde nemese eden nemese üstel siaqty tegıs köldeneñ betke tıkelei tūryp, 3D rejimınde tekserıñız"
+      },
+      "nucleosome": {
+        "title": "Nukleosoma",
+        "description": "Nukleosomanyñ rentgendık qūrylymy, onyñ ışınde 4 giston jäne oralğan ssDNA 2 raundy (PDB ID 1AOI).",
+        "instructions": "AR markerınde nemese eden nemese üstel siaqty tegıs köldeneñ betke tıkelei tūryp, 3D rejimınde tekserıñız"
+      }
+    },
+    "modelingKit": {
+      "title": "Molekulalyq modeldeu jinağy"
+    },
+    "surveys": {
+      "welcomeMsg": "Sälem, saitty paidalanğanyñyzğa rahmet. Bızben täjıribeñızben bölısuge uaqyt bölgenıñızge öte rizamyz",
+      "selectProfile": "Sız student nemese mūğalım bolsañyz, tañdañyz",
+      "educator": "Mūğalım",
+      "student": "Student, oquşy",
+      "tellUs": "Bızge aityñyz:",
+      "textPlaceholder": "Jauabyñyzdy osynda terıñız",
+      "contactUs": "Sız sondai-aq bızben luciano.abriata@epfl.ch mekenjaiy boiynşa bailanysyp, jaña ideialardy ūsynuğa, jaña mysaldar daiyndauğa kömektesuge, studenttermen täjıribe almasuğa jäne t.b.",
+      "questions": {
+        "usedARBefore": "Men osy veb-saitty paidalanbas būryn basqa tolyqtyrylğan şyndyq (AR) tehnologiasyn qoldanbalaryn paidalandym ",
+        "easilyUse": "Men būl veb-saitty markerlerdegı molekulalardy köru üşın oñai paidalana alamyn",
+        "understand": "Tolyqtyrylğan şyndyqty paidalanu mağan molekulalardyñ qūrylymyn jäne himia ūğymdaryn jaqsyraq tüsınuge kömektestı",
+        "interestInChemistry": "Osy veb-saitty paidalanu menıñ himiağa degen qyzyğuşylyğymdy arttyrdy",
+        "interestInTech": "Osy veb-saitty paidalanu menı bağdarlamalauğa, tolyqtyrylğan şyndyqqa jäne t.b. qyzyqtyrdy",
+        "place": "Sız veb-saitty mektepte, üide nemese universitette de qoldandyñyz ba?",
+        "suggestions": "Basqa qandai molekulalar nemese mazmūn daiyndağanymyzdy qalaisyz?",
+        "liveIn": "Sız ... tūrasyz ba?",
+        "age": "Sız qanşa jastasyz?",
+        "howManyStudents": "Eger sız veb-saitty studenttermen paidalansañyz, olar qanşa boldy?",
+        "studentsInterest": "Oquşylardyñ qūraldy paidalanuğa degen qyzyğuşylyğyn baiqadym",
+        "studentsUnderstanding": "Qūraldy qoldanu studentterge molekulalyq qūrylymdy jäne basqa da himia ūğymdaryn jaqsy tüsınuge kömektesetının tüsındım",
+        "emailAddress": "Jaña şyğarylymdar turaly habardar bolğyñyz kelse, elektrondyq poşta mekenjaiyñyz."
+      },
+      "answers": {
+        "notAtAll": "Eşqaşan",
+        "notReally": "Onşa emes",
+        "aLittle": "İä, azdap",
+        "aLot": "İä, köp",
+        "perhaps": "Tek 1, 2, mümkın 3 ret",
+        "severalTimes": "Bırneşe ret",
+        "didntWork": "Joq, men ony ıske asyra almadym",
+        "hardToWork": "Ony jüzege asyru qiyn boldy, bıraq aqyry sättı boldy",
+        "someEffort": "Būl bırınşı ret bıraz küş jūmsady, bıraq keiın bırneşe ret paidalanu oñai boldy",
+        "easyToWork": "Menıñ bırınşı äreketımnen bastap veb-saitty paidalanu öte oñai boldy",
+        "school": "Mektepte jäne universitette",
+        "home": "Üide",
+        "both": "Mektepte de, üide de jäne universitette",
+        "africa": "Afrika",
+        "asia": "Azia",
+        "northAmerica": "Soltüstık Amerika",
+        "latam": "Oñtüstık Amerika",
+        "europe": "Evropa",
+        "middleEast": "Ortalyq Azia",
+        "oceania": "Avstralia jäne mūhit elderı"
+      }
+    },
+    "about": {
+      "threePart": "Biochem.edu veb-platformasy MoleculARWeb (EPFL) bastapqy kodynda jazylğan.",
+      "firstPart": "MoleculARweb — veb-kamera qosylğan kömpüterde, smartfonda nemese planşette tek veb-şolğyşta paidalanuğa bolatyn tauarlyq, veb-negızdelgen tolyqtyrylğan şyndyq arqyly himia jäne qūrylymdyq biologia boiynşa bılım beruge arnalğan veb-platforma. Ony negızınen Fabio Kortes Rodriges jäne Luchano A. Abriata äzırlegen jäne qūrastyrğan.",
+      "lbm_html": "<u>Biomolekulalyq modeldeu zerthanasy</u>",
+      "epfl_html": "at <u>Lozannadağy Federaldyq tehnologia instituty</u>",
+      "secondPart": "(EPFL) Şveisariada toptağy bırneşe serıktesterdıñ, sondai-aq basqa instituttardyñ zertteuşılerı men oqytuşylarynyñ kömegımen. Joba CRSK-1_190376 Spark grantymen qarjylandyrylady",
+      "snf_html": "<u>Şveisarianyñ Ūlttyq ğylym qory</u> ",
+      "toLAB": "Luchiano A. Abriatağa.",
+      "snfDB_html": " Būl joba mūnda SNF jobasynyñ derekqorynda sipattalğan</u>.",
+      "thirdPart": "Veb-sait klienttık veb-bağdarlamalauğa negızdelgen (qarañyz",
+      "this_html": "<u>būl</u>",
+      "and": " jäne ",
+      "fourthPart": ") būl äreketter brauzerıñızde, kömpüterıñızde tolyğymen jergılıktı türde oryndalatynyn bıldıredı. moleculARweb bağdarlamasyn bağdarlamalau üşın qoldanylatyn tehnologialardyñ türı myna bölımde sipattalğan",
+      "article_html": "būl aşyq qoljetımdı resenzialanğan maqala PeerJ Comp Sci</u>, ",
+      "fifthPart": "moleculARweb-te berılgen naqty äreketter mynada sipattalğan",
+      "preprint_html": "<u>būl aldyn ala basyp şyğaru ChemRxiv</u>, ",
+      "sixthPart": "onda barlyq üles qosqan avtorlar men basqa da alğystar tızımı berılgen.",
+      "seventhPart": "Biochem.edu qoldanady",
+      "eighthPart": "Veb-saitta paidalanylğan belgışeler myna jerden jükteldı",
+      "madeBy": "Pixel Perfect, Smashicons, Freebies, Diacanvas Studio jäne Dario Ferrando jasağan. Veb-saittyñ logotipı sol avtorlardan alynğan tegın, aşyq belgışelerden jasalğan",
+      "openSource": "Būl AGPL-3 lisenziasyndağy aşyq bastapqy joba. GitHub repozitorilerın tekserıñız:",
+      "privacyStart": "Mūnda sız taba alasyz",
+      "privacyPolicy": "<u>Privacy policy</u>.",
+      "thaiContributors": "Qazaq jıne orys tılıne audarğan Maqtanat Oñğar.",
+      "aboutOngar": "Jobanyñ özgertılgen nūsqasynyñ avtory turaly:",
+      "ongar": "Maktanat Ongar - Entuzias-programis jäne EŪU studentı",
+      "aboutAuthors": "Negızgı avtorlar turaly:",
+      "fabio": " Fabio Kortes Rodriges - bağdarlamalyq jasaqtama injenerı jäne tehnolog, keñeitılgen jäne virtualdy şyndyqqa qūmar jäne öner men tehnologianyñ qiylysyn zertteidı. Qazırgı uaqytta ol EPFL biomolekulalyq modeldeu zerthanasynda WebXR injenerı.",
+      "luciano": " Dr. Luciano A. Abriata – himia ğylymdarynyñ kandidaty, biologialyq iadrolyq magnittık rezonans pen molekulalyq modeldeu jäne biologialyq jüielerdı modeldeu salasynda köp jyldyq täjıribesı bar, veb-bağdarlamalauğa jäne jūmys pen bılım berudı jaqsartuğa arnalğan zamanaui adam-kömpüterlık tehnologialarğa qūmar biotehnolog. Qazırgı uaqytta ol EPFL proteindık biofizika tobynda İAMR boiynşa sarapşy jäne EPFL biomolekulalyq modeldeu zerthanasynyñ ağa ğalymy."
+    },
+    "contact": {
+      "threePart":"Platformanyñ damuyna üles qosqyñyz kele me? Barlyq sūraqtar boiynşa developer.ongar@gmail.com mekenjaiyna jyzyñyz",
+      "open":"Menıñ blogym OPEN",
+      "firstPart": "Biochem.kz  şynaiy alğysyn Molecularweb äzırleuşılerı Fabio Kortes Rodriges (fabio.cortesrodriguez@epfl.ch) pen Luchano A.Abriatege (luciano.abriata@epfl.ch) bıldıredı.",
+      "thirdPart": "Eger sız osy kodtyñ Forkyn körgıñız kelse, tüimenı basyñyz ",
+      "link": "LINK.",
+      "fourthPart": "Veb-sait, joba jäne avtorlar turaly köbırek bılu üşın ötıñız",
+      "here": "HERE."
+    }
+  }
