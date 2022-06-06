@@ -423,6 +423,10 @@ headerTemplate.innerHTML = /* html */ `
       <a class="mobile-menu-link" id="kk_">
       Қазақ
        </a>
+       
+       <a class="mobile-menu-link" id="qq_">
+      Qazaq
+       </a>
       
       <a class="mobile-menu-link" id="en_">
           English
