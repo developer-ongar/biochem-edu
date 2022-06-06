@@ -4,10 +4,12 @@ var appHeader = document.querySelector("app-header");
 
 var english = appHeader.shadowRoot.querySelector("#en");
 var kazakh = appHeader.shadowRoot.querySelector("#kk");
+var qazaq = appHeader.shadowRoot.querySelector("#qq");
 var russian = appHeader.shadowRoot.querySelector("#ru");
 
 var english2 = appHeader.shadowRoot.querySelector("#en_");
 var kazakh2 = appHeader.shadowRoot.querySelector("#kk_");
+var qazaq2 = appHeader.shadowRoot.querySelector("#qq_");
 var russian2 = appHeader.shadowRoot.querySelector("#ru_");
 
 i18next
