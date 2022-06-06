@@ -207,6 +207,7 @@ overlayTemplate.innerHTML = /* html */ `
       </p>
       <div class="buttons">
         <button id="kk">Қазақ</button>
+        <button id="qq">Qazaq</button>
         <button id="en">English</button>
         <button id="ru">Русский</button>
       </div>
@@ -267,10 +268,12 @@ class ActivityOverlay extends HTMLElement {
 
     this.english = this.shadowRoot.querySelector("#en");
     this.kazakh = this.shadowRoot.querySelector("#kk");
+    this.qazaq = this.shadowRoot.querySelector("#qq");
     this.russian = this.shadowRoot.querySelector("#ru");
 
     this.english.addEventListener("click", this.handleLanguageChange);
     this.kazakh.addEventListener("click", this.handleLanguageChange);
+    this.qazaq.addEventListener("click", this.handleLanguageChange);
     this.russian.addEventListener("click", this.handleLanguageChange);
   }
 
