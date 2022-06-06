@@ -64,8 +64,10 @@ i18next.on("languageChanged", function () {
 
 english.addEventListener("click", handleLanguageChange);
 kazakh.addEventListener("click", handleLanguageChange);
+qazaq.addEventListener("click", handleLanguageChange);
 russian.addEventListener("click", handleLanguageChange);
 
 english2.addEventListener("click", handleLanguageChange);
 kazakh2.addEventListener("click", handleLanguageChange);
+qazaq2.addEventListener("click", handleLanguageChange);
 russian2.addEventListener("click", handleLanguageChange);
